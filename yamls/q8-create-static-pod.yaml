@@ -1,0 +1,15 @@
+piVersion: v1
+kind: Pod
+metadata:
+  name: static-busybox
+  labels:
+spec:
+  containers:
+    - name: web
+      image: busybox
+	  command: ["/bin/sh"]
+	  args: ["sleep 1000"]
+      ports:
+        - name: web
+          containerPort: 80
+          protocol: TCP

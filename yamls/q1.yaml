@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod-ofir
+spec:
+  containers:
+  - name: nginx-pod-ofir
+    image: nginx:alpine
+    ports:
+    - containerPort: 80
